@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taste of India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Taste of India</h1>
+    <p>Explore top restaurants across Indian cities</p>
+  </header>
+
+  <main id="city-container">
+    <div class="city" onclick="showRestaurants('Delhi')">
+      <img src="images/delhi.jpg" alt="Delhi">
+      <h3>Delhi</h3>
+    </div>
+    <div class="city" onclick="showRestaurants('Mumbai')">
+      <img src="images/mumbai.jpg" alt="Mumbai">
+      <h3>Mumbai</h3>
+    </div>
+    <div class="city" onclick="showRestaurants('Chennai')">
+      <img src="images/chennai.jpg" alt="Chennai">
+      <h3>Chennai</h3>
+    </div>
+    <div class="city" onclick="showRestaurants('Kolkata')">
+      <img src="images/kolkata.jpg" alt="Kolkata">
+      <h3>Kolkata</h3>
+    </div>
+  </main>
+
+  <section id="restaurant-section" style="display: none;">
+    <h2 id="city-name"></h2>
+    <div id="restaurant-list" class="restaurant-grid"></div>
+    <button onclick="goBack()">← Back to Cities</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
